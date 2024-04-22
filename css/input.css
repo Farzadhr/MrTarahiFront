@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    direction: rtl;
+}
+
+@font-face {
+    font-family: Iran;
+    src: url("../font/IRANSansWeb.eot"),url("../font/IRANSansWeb.ttf"),url("../font/IRANSansWeb\(FaNum\).woff");
+}
+*{
+    font-family: Iran;
+}
