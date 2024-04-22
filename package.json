@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@iconify/json": "^2.2.203",
+    "@iconify/tailwind": "^0.1.4",
+    "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "flowbite": "^2.3.0"
+  }
+}
