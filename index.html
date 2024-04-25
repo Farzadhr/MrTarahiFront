@@ -9,8 +9,8 @@
 </head>
 
 <body>
-    <header class="container mx-auto">
-        <div class="flex md:hidden w-full justify-between px-5 py-3">
+    <header class="mx-auto">
+        <div class="flex tablet:hidden w-full justify-between px-5 py-3">
             <div class="icon-[ph--list-bold] h-10 w-10" id="OpenMobileMenu"></div>
             <img src="img/logo.png" class="h-10" alt="Logo Of site">
             <div id="MoblieMenu"
@@ -36,18 +36,22 @@
                 </div>
             </div>
         </div>
-        <div class="hidden w-full md:flex justify-between px-5 py-3">
-            <img src="img/logo.png" class="h-10" alt="Logo Of site">
-            <div class="w-full flex items-center pr-10">
-                <a href="#" class="flex items-center mx-4"><span class="icon-[bx--home] h-5 w-5 ml-4"></span> خانه</a>
-                <a href="#" class="flex items-center mx-4"><span class="icon-[bxs--layer] h-5 w-5 ml-4"></span> نمونه
+        <div class="hidden w-full tablet:flex justify-between px-5 py-3">
+            <img src="img/logo.png" class="h-10 tablet:h-8 laptop:h-10" alt="Logo Of site">
+            <div class="w-full flex items-center pr-10 tablet:pr-5">
+                <a href="#" class="flex items-center mx-4 tablet:text-xs laptop:text-sm desktop:text-base"><span
+                        class="icon-[bx--home] h-5 w-5 ml-4"></span> خانه</a>
+                <a href="#" class="flex items-center mx-4 tablet:text-xs laptop:text-sm desktop:text-base"><span
+                        class="icon-[bxs--layer] h-5 w-5 ml-4"></span> نمونه
                     کارها</a>
-                <a href="#" class="flex items-center mx-4"><span class="icon-[bx--dollar] h-5 w-5 ml-4"></span> تعرفه
+                <a href="#" class="flex items-center mx-4 tablet:text-xs laptop:text-sm desktop:text-base"><span
+                        class="icon-[bx--dollar] h-5 w-5 ml-4"></span> تعرفه
                     طراحی</a>
-                <a href="#" class="flex items-center mx-4"><span
+                <a href="#" class="flex items-center mx-4 tablet:text-xs laptop:text-sm desktop:text-base"><span
                         class="icon-[icon-park-outline--shopping] h-5 w-5 ml-4"></span> ثبت سفارش</a>
-                <a href="#" class="flex items-center mx-4">آموزش</a>
-                <a href="#" class="flex items-center mx-4"><span class="icon-[gravity-ui--at] h-5 w-5 ml-4"></span>
+                <a href="#" class="flex items-center mx-4 tablet:text-xs laptop:text-sm desktop:text-base">آموزش</a>
+                <a href="#" class="flex items-center mx-4 tablet:text-xs laptop:text-sm desktop:text-base"><span
+                        class="icon-[gravity-ui--at] h-5 w-5 ml-4"></span>
                     ارتباط با ما</a>
             </div>
             <a href="#" class="flex items-center flex-shrink-0"><span
@@ -55,14 +59,15 @@
         </div>
     </header>
     <main>
-        <div class="w-full py-10 bg-primary px-2 md:px-10">
-            <div class="container flex md:flex-row-reverse flex-wrap">
-                <div class="w-full md:w-7/12">
+        <!-- هدر صفحه اصلی  -->
+        <div class="w-full py-10 bg-primary px-2 tablet:px-10">
+            <div class="container flex tablet:flex-row-reverse flex-wrap">
+                <div class="w-full tablet:w-7/12 tablet:px-10">
 
 
                     <div id="default-carousel" class="relative w-full" data-carousel="slide">
                         <!-- Carousel wrapper -->
-                        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                        <div class="relative h-56 overflow-hidden rounded-lg tablet:h-96">
                             <!-- Item 1 -->
                             <div class="hidden duration-700 ease-in-out" data-carousel-item>
                                 <img src="img/carousel-1.svg"
@@ -112,29 +117,426 @@
                             class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                             data-carousel-prev>
                             <span
-                                class="icon-[icon-park--right] inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 ">
+                                class="icon-[icon-park--right] flex items-center justify-center w-10 h-10 rounded-full bg-white/30 ">
                             </span>
                         </button>
                         <button type="button"
                             class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                             data-carousel-next>
                             <span
-                                class="icon-[icon-park--left] inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 ">
+                                class="icon-[icon-park--left] flex items-center justify-center w-10 h-10 rounded-full bg-white/30 ">
                             </span>
                         </button>
                     </div>
 
                 </div>
-                <div class="w-full mt-10 md:mt-0 md:w-5/12">
-                    
+                <div class="w-full mt-10 tablet:mt-0 tablet:w-5/12 tablet:pl-20 tablet:pr-10">
+                    <div class="w-full flex items-center mt-5">
+                        <img src="./img/Layer 3.png" class="inline-block" alt="mini logo for banner" loading="lazy">
+                        <h1 class="text-3xl mr-4 text-white">مستر طراحی</h1>
+                    </div>
+                    <p class="mt-7 tablet:text-4xl text-white">طراحی بنر ، موشن گرافیک ، لوگو و تیزر تبلیغاتی</p>
+                    <p class="text-textLight mt-7 text-lg">مستر طراحی ترکیبی از کیفیت حرفه ای ، قیمت مناسب و ارائه خدمات
+                        سریع به مشتریان است.</p>
+                    <a href="#" class="mt-7 btn-yellow text-xl font-bold flex justify-between">ثبت سفارش <span
+                            class="icon-[icon-park--left] h-6 w-6"></span></a>
                 </div>
+                <div class="w-full flex justify-start items-center mt-5">
+                    <p class="ml-3 text-xs text-white flex-shrink-0">پرطرفدار ها : </p>
+                    <div class="flex justify-start items-center flex-wrap">
+                        <a href="#" class="tag-secondary mx-1 text-xs mt-3 tablet:mt-0 tablet:text-sm">بنر گیف</a>
+                        <a href="#" class="tag-secondary mx-1 text-xs mt-3 tablet:mt-0 tablet:text-sm">موشن گرافیک</a>
+                        <a href="#" class="tag-secondary mx-1 text-xs mt-3 tablet:mt-0 tablet:text-sm">شبکه اجتماعی</a>
+                        <a href="#" class="tag-secondary mx-1 text-xs mt-3 tablet:mt-0 tablet:text-sm">طراحی سایت</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- خدمات مستر طراحی -->
+        <div class="w-full py-10 bg-light">
+            <p class="text-center text-textLight text-2xl">خدمات مستر طراحی</p>
+            <div class="mt-5 flex justify-start flex-wrap px-10 tablet:px-5">
+                <a href="#"
+                    class="w-full tablet:w-[calc(33.33%_-_40px)] laptop:w-[calc(25%_-_40px)] desktop:w-[calc(20%_-_40px)] tablet:mx-5 mb-5 p-1 rounded-lg bg-white">
+                    <img src="./img/ImgOfNull.png" alt="" class="object-cover w-full rounded-lg">
+                    <div class="flex justify-between items-center px-5 pt-4 pb-1">
+                        <p class="font-bold text-lg laptop:text-sm text-textDark">بنر گیف</p><span
+                            class="text-xs text-textLight flex items-center">مشاهده نمونه <span
+                                class="icon-[icon-park-outline--left] h-4 w-4 !text-primary"></span></span>
+                    </div>
+                </a>
+                <a href="#"
+                    class="w-full tablet:w-[calc(33.33%_-_40px)] laptop:w-[calc(25%_-_40px)] desktop:w-[calc(20%_-_40px)] tablet:mx-5 mb-5 p-1 rounded-lg bg-white">
+                    <img src="./img/ImgOfNull.png" alt="" class="object-cover w-full rounded-lg">
+                    <div class="flex justify-between items-center px-5 pt-4 pb-1">
+                        <p class="font-bold text-lg laptop:text-sm text-textDark">سایت</p><span
+                            class="text-xs text-textLight flex items-center">مشاهده نمونه <span
+                                class="icon-[icon-park-outline--left] h-4 w-4 !text-primary"></span></span>
+                    </div>
+                </a>
+                <a href="#"
+                    class="w-full tablet:w-[calc(33.33%_-_40px)] laptop:w-[calc(25%_-_40px)] desktop:w-[calc(20%_-_40px)] tablet:mx-5 mb-5 p-1 rounded-lg bg-white">
+                    <img src="./img/ImgOfNull.png" alt="" class="object-cover w-full rounded-lg">
+                    <div class="flex justify-between items-center px-5 pt-4 pb-1">
+                        <p class="font-bold text-lg laptop:text-sm text-textDark">موشن گرافیک</p><span
+                            class="text-xs text-textLight flex items-center">مشاهده نمونه <span
+                                class="icon-[icon-park-outline--left] h-4 w-4 !text-primary"></span></span>
+                    </div>
+                </a>
+                <a href="#"
+                    class="w-full tablet:w-[calc(33.33%_-_40px)] laptop:w-[calc(25%_-_40px)] desktop:w-[calc(20%_-_40px)] tablet:mx-5 mb-5 p-1 rounded-lg bg-white">
+                    <img src="./img/ImgOfNull.png" alt="" class="object-cover w-full rounded-lg">
+                    <div class="flex justify-between items-center px-5 pt-4 pb-1">
+                        <p class="font-bold text-lg laptop:text-sm text-textDark">شبکه اجتماعی</p><span
+                            class="text-xs text-textLight flex items-center">مشاهده نمونه <span
+                                class="icon-[icon-park-outline--left] h-4 w-4 !text-primary"></span></span>
+                    </div>
+                </a>
+                <a href="#"
+                    class="w-full tablet:w-[calc(33.33%_-_40px)] laptop:w-[calc(25%_-_40px)] desktop:w-[calc(20%_-_40px)] tablet:mx-5 mb-5 p-1 rounded-lg bg-white">
+                    <img src="./img/ImgOfNull.png" alt="" class="object-cover w-full rounded-lg">
+                    <div class="flex justify-between items-center px-5 pt-4 pb-1">
+                        <p class="font-bold text-lg laptop:text-sm text-textDark">لندینگ پیج</p><span
+                            class="text-xs text-textLight flex items-center">مشاهده نمونه <span
+                                class="icon-[icon-park-outline--left] h-4 w-4 !text-primary"></span></span>
+                    </div>
+                </a>
+                <a href="#"
+                    class="w-full tablet:w-[calc(33.33%_-_40px)] laptop:w-[calc(25%_-_40px)] desktop:w-[calc(20%_-_40px)] tablet:mx-5 mb-5 p-1 rounded-lg bg-white">
+                    <img src="./img/ImgOfNull.png" alt="" class="object-cover w-full rounded-lg">
+                    <div class="flex justify-between items-center px-5 pt-4 pb-1">
+                        <p class="font-bold text-lg laptop:text-sm text-textDark">تیزر </p><span
+                            class="text-xs text-textLight flex items-center">مشاهده نمونه <span
+                                class="icon-[icon-park-outline--left] h-4 w-4 !text-primary"></span></span>
+                    </div>
+                </a>
+                <a href="#"
+                    class="w-full tablet:w-[calc(33.33%_-_40px)] laptop:w-[calc(25%_-_40px)] desktop:w-[calc(20%_-_40px)] tablet:mx-5 mb-5 p-1 rounded-lg bg-white">
+                    <img src="./img/ImgOfNull.png" alt="" class="object-cover w-full rounded-lg">
+                    <div class="flex justify-between items-center px-5 pt-4 pb-1">
+                        <p class="font-bold text-lg laptop:text-sm text-textDark">عکاسی </p><span
+                            class="text-xs text-textLight flex items-center">مشاهده نمونه <span
+                                class="icon-[icon-park-outline--left] h-4 w-4 !text-primary"></span></span>
+                    </div>
+                </a>
+                <a href="#"
+                    class="w-full tablet:w-[calc(33.33%_-_40px)] laptop:w-[calc(25%_-_40px)] desktop:w-[calc(20%_-_40px)] tablet:mx-5 mb-5 p-1 rounded-lg bg-white">
+                    <img src="./img/ImgOfNull.png" alt="" class="object-cover w-full rounded-lg">
+                    <div class="flex justify-between items-center px-5 pt-4 pb-1">
+                        <p class="font-bold text-lg laptop:text-sm text-textDark">ست اداری </p><span
+                            class="text-xs text-textLight flex items-center">مشاهده نمونه <span
+                                class="icon-[icon-park-outline--left] h-4 w-4 !text-primary"></span></span>
+                    </div>
+                </a>
+                <a href="#"
+                    class="w-full tablet:w-[calc(33.33%_-_40px)] laptop:w-[calc(25%_-_40px)] desktop:w-[calc(20%_-_40px)] tablet:mx-5 mb-5 p-1 rounded-lg bg-white">
+                    <img src="./img/ImgOfNull.png" alt="" class="object-cover w-full rounded-lg">
+                    <div class="flex justify-between items-center px-5 pt-4 pb-1">
+                        <p class="font-bold text-lg laptop:text-sm text-textDark">پوستر </p><span
+                            class="text-xs text-textLight flex items-center">مشاهده نمونه <span
+                                class="icon-[icon-park-outline--left] h-4 w-4 !text-primary"></span></span>
+                    </div>
+                </a>
+                <a href="#"
+                    class="w-full tablet:w-[calc(33.33%_-_40px)] laptop:w-[calc(25%_-_40px)] desktop:w-[calc(20%_-_40px)] tablet:mx-5 mb-5 p-1 rounded-lg bg-white">
+                    <img src="./img/ImgOfNull.png" alt="" class="object-cover w-full rounded-lg">
+                    <div class="flex justify-between items-center px-5 pt-4 pb-1">
+                        <p class="font-bold text-lg laptop:text-sm text-textDark">بوشور </p><span
+                            class="text-xs text-textLight flex items-center">مشاهده نمونه <span
+                                class="icon-[icon-park-outline--left] h-4 w-4 !text-primary"></span></span>
+                    </div>
+                </a>
+                <a href="#"
+                    class="w-full tablet:w-[calc(33.33%_-_40px)] laptop:w-[calc(25%_-_40px)] desktop:w-[calc(20%_-_40px)] tablet:mx-5 mb-5 p-1 rounded-lg bg-white">
+                    <img src="./img/ImgOfNull.png" alt="" class="object-cover w-full rounded-lg">
+                    <div class="flex justify-between items-center px-5 pt-4 pb-1">
+                        <p class="font-bold text-lg laptop:text-sm text-textDark">کاتالوگ </p><span
+                            class="text-xs text-textLight flex items-center">مشاهده نمونه <span
+                                class="icon-[icon-park-outline--left] h-4 w-4 !text-primary"></span></span>
+                    </div>
+                </a>
+                <a href="#"
+                    class="w-full tablet:w-[calc(33.33%_-_40px)] laptop:w-[calc(25%_-_40px)] desktop:w-[calc(20%_-_40px)] tablet:mx-5 mb-5 p-1 rounded-lg bg-white">
+                    <img src="./img/ImgOfNull.png" alt="" class="object-cover w-full rounded-lg">
+                    <div class="flex justify-between items-center px-5 pt-4 pb-1">
+                        <p class="font-bold text-lg laptop:text-sm text-textDark">کاتالوگ دیجیتال </p><span
+                            class="text-xs text-textLight flex items-center">مشاهده نمونه <span
+                                class="icon-[icon-park-outline--left] h-4 w-4 !text-primary"></span></span>
+                    </div>
+                </a>
+                <a href="#"
+                    class="w-full tablet:w-[calc(33.33%_-_40px)] laptop:w-[calc(25%_-_40px)] desktop:w-[calc(20%_-_40px)] tablet:mx-5 mb-5 p-1 rounded-lg bg-white">
+                    <img src="./img/ImgOfNull.png" alt="" class="object-cover w-full rounded-lg">
+                    <div class="flex justify-between items-center px-5 pt-4 pb-1">
+                        <p class="font-bold text-lg laptop:text-sm text-textDark">خرید فری پیک </p>
+                    </div>
+                </a>
+                <a href="#"
+                    class="w-full tablet:w-[calc(33.33%_-_40px)] laptop:w-[calc(25%_-_40px)] desktop:w-[calc(20%_-_40px)] tablet:mx-5 mb-5 p-1 rounded-lg bg-white">
+                    <img src="./img/ImgOfNull.png" alt="" class="object-cover w-full rounded-lg">
+                    <div class="flex justify-between items-center px-5 pt-4 pb-1">
+                        <p class="font-bold text-lg laptop:text-sm text-textDark">خرید شاتر استوک </p>
+                    </div>
+                </a>
+                <a href="#"
+                    class="w-full tablet:w-[calc(33.33%_-_40px)] laptop:w-[calc(25%_-_40px)] desktop:w-[calc(20%_-_40px)] tablet:mx-5 mb-5 p-1 rounded-lg bg-white">
+                    <img src="./img/ImgOfNull.png" alt="" class="object-cover w-full rounded-lg">
+                    <div class="flex justify-between items-center px-5 pt-4 pb-1">
+                        <p class="font-bold text-lg laptop:text-sm text-textDark">خرید لایه باز فایل مستر طراحی </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- چرا باید از مستر طراحی استفاده کنیم  -->
+        <div class="w-full bg-white px-10 flex flex-wrap py-10 tablet:flex-row-reverse">
+            <p class="w-full text-center text-2xl text-textDark pb-10">چرا باید مستر را برای خدمات طراحی استفاده کنیم ؟
+            </p>
+            <div class="w-full tablet:w-1/2">
+                <img src="./img/ImgOfNull.png" class="object-cover w-full h-[350px] rounded-lg" alt="">
+            </div>
+            <div class="w-full tablet:w-1/2 pl-8">
+                <p class="text-textLight text-sm mt-10 tablet:mt-0 text-justify tablet:text-start">
+                    مستر طراحی از سال 88 در زمینه ی طراحی لوگو ، بنر، تیزر، لندینگ پیج و تبلیغات مختلف
+                    فعالیت دارد و این افتخار را دارد که با اکثر برند های ایرانی همکاری داشته، با توجه
+                    به شناختی درست از مخاطب و بازار توانسته سایت های زیادی را به مخاطب نشان دهد.
+                    در عصر حاضر که فناوری و اطلاعات با سرعت زیادی رو به پیشرفت است، تبلیغات مجازی
+                    مانند استوری و پست شبکه های اجتماعی از اهمیت بالایی برخوردار است، که تمامی این موارد
+                    توسط تیم حرفه ای، مستر طراحی قابل اجراست<br><br>نو آوری و خلاقیت از ارکان اصلی
+                    تیم ماست که صحت این امر در نمونه کارهای داخل سایت مشهود است.<br><br> از دیگر خصوصیات ما،
+                    تعرفه های مقرون به صرفه و سرعت بالا، در تحویل سفارشات است.
+                    <br><br> تمام تلاش ما این است تا در کمترین زمان ممکن، با حفظ کیفیت و هویت برند شما سفارشات را تحویل
+                    دهیم.
+                </p>
+            </div>
+        </div>
+        <!-- اطلاعات شرکت به صورت دایره ای  -->
+        <div class="w-full bg-secondary flex flex-wrap tablet:flex-nowrap justify-center py-10 px-10">
+            <div class="w-[calc(50%_-_64px)] mb-5 tablet:mb-0 flex flex-col tablet:w-[calc(20%_-_64px)] mx-8">
+                <div class="progress-bar w-full">
+                    <img src="./img/ProgressbarSVG/dateProgress.svg" class="h-8 tablet:h-12" alt="">
+                </div>
+                <p class="text-lg text-primary font-bold text-center mt-5">269</p>
+                <p class="text-white text-center mt-3">روز از تاسیس</p>
+            </div>
+            <div class="w-[calc(50%_-_64px)] mb-5 tablet:mb-0 flex flex-col tablet:w-[calc(20%_-_64px)] mx-8">
+                <div class="progress-bar w-full">
+                    <img src="./img/ProgressbarSVG/satisProgress.svg" class="h-8 tablet:h-12" alt="">
+                </div>
+                <p class="text-lg text-primary font-bold text-center mt-5">75%</p>
+                <p class="text-white text-center mt-3">رضایت مشتری</p>
+            </div>
+            <div class="w-[calc(50%_-_64px)] mb-5 tablet:mb-0 flex flex-col tablet:w-[calc(20%_-_64px)] mx-8">
+                <div class="progress-bar w-full">
+                    <img src="./img/ProgressbarSVG/banersProgress (1).svg" class="h-8 tablet:h-12" alt="">
+                </div>
+                <p class="text-lg text-primary font-bold text-center mt-5">1235</p>
+                <p class="text-white text-center mt-3">پروژه طراحی</p>
+            </div>
+            <div class="w-[calc(50%_-_64px)] mb-5 tablet:mb-0 flex flex-col tablet:w-[calc(20%_-_64px)] mx-8">
+                <div class="progress-bar w-full">
+                    <img src="./img/ProgressbarSVG/clientProgress (1).svg" class="h-8 tablet:h-12" alt="">
+                </div>
+                <p class="text-lg text-primary font-bold text-center mt-5">850</p>
+                <p class="text-white text-center mt-3">مشتری تاکنون</p>
+            </div>
+            <div class="w-[calc(50%_-_64px)] mb-5 tablet:mb-0 flex flex-col tablet:w-[calc(20%_-_64px)] mx-8">
+                <div class="progress-bar w-full">
+                    <img src="./img/ProgressbarSVG/designersProgress.svg" class="h-8 tablet:h-12" alt="">
+                </div>
+                <p class="text-lg text-primary font-bold text-center mt-5">4</p>
+                <p class="text-white text-center mt-3">تعداد طراحان</p>
             </div>
 
         </div>
+        <!-- اخبار و وبلاگ -->
+        <div class="w-full bg-white px-4 tablet:px-10 flex flex-wrap py-10">
+            <p class="w-full text-center text-2xl text- pb-10">چرا باید مستر را برای خدمات طراحی استفاده کنیم ؟
+            </p>
+            <div class="w-full tablet:w-1/2 tablet:px-5">
+                <div class="w-full border border-textLight/40 rounded-xl p-2 mb-5">
+                    <img src="./img/blogtestimg.png" class="w-full" alt="">
+                    <p class="text-lg font-bold text-textDark mt-3 mb-2">تاثیر تبلیغات بنر در خرید اینترنتی</p>
+                    <p class="text-sm text-textLight mt-1">
+                        تبلیغات بنر شامل آگهی های آنلاین است که در ویسایت ها و نتایج جستجو (موتورهای جستجو) ظاهر
+                        می شوند. وبسایت ها به دیگران این اجازه را می دهند تا بر روی سرعت آن ها تبلیغ کنند؛ هر یک از
+                        این وبسایت ها شرایط خاص خود را داشته و از نظر محبوبیت، رنکینگ و هزینه متفاوت هستند.
+                    </p>
+                    <div class="flex justify-between items-center mt-5">
+                        <p class="text-textLight">12 خرداد 99</p><a class="text-textLight flex items-center">ادامه مطلب
+                            <span class="icon-[icon-park-outline--left] h-4 w-4 !text-primary"></span></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="w-full flex flex-col tablet:w-1/2 tablet:px-5">
+                <div
+                    class="w-full tablet:h-[calc(50%-20px)] flex flex-col tablet:flex-row mb-5 border border-textLight/40 rounded-xl p-2">
+                    <div class="w-full tablet:w-5/12 tablet:ml-5">
+                        <img src="./img/blogtestimg.png" class="rounded-lg w-full tablet:h-full object-cover" alt="">
+                    </div>
+                    <div class="w-full tablet:w-7/12">
+                        <p class="text-lg font-bold text-textDark mt-3 mb-2">تاثیر تبلیغات بنر در خرید اینترنتی</p>
+                        <!-- فقط در اینجا 200 کاراکتر نمایش داده شود -->
+                        <p class="text-sm text-textLight mt-1">
+                            تبلیغات بنر شامل آگهی های آنلاین است که در ویسایت ها و نتایج جستجو (موتورهای جستجو) ظاهر
+                            می شوند. وبسایت ها به دیگران این اجازه را می دهند تا بر...
+                        </p>
+                        <div class="flex justify-between items-center mt-5">
+                            <p class="text-textLight">12 خرداد 99</p><a class="text-textLight flex items-center">ادامه
+                                مطلب <span class="icon-[icon-park-outline--left] h-4 w-4 !text-primary"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-full tablet:h-[calc(50%-20px)] flex flex-col tablet:flex-row mb-5 border border-textLight/40 rounded-xl p-2">
+                    <div class="w-full tablet:w-5/12 tablet:ml-5">
+                        <img src="./img/blogtestimg.png" class="rounded-lg w-full tablet:h-full object-cover" alt="">
+                    </div>
+                    <div class="w-full tablet:w-7/12">
+                        <p class="text-lg font-bold text-textDark mt-3 mb-2">تاثیر تبلیغات بنر در خرید اینترنتی</p>
+                        <!-- فقط در اینجا 200 کاراکتر نمایش داده شود -->
+                        <p class="text-sm text-textLight mt-1">
+                            تبلیغات بنر شامل آگهی های آنلاین است که در ویسایت ها و نتایج جستجو (موتورهای جستجو) ظاهر
+                            می شوند. وبسایت ها به دیگران این اجازه را می دهند تا بر...
+                        </p>
+                        <div class="flex justify-between items-center mt-5">
+                            <p class="text-textLight">12 خرداد 99</p><a class="text-textLight flex items-center">ادامه
+                                مطلب <span class="icon-[icon-park-outline--left] h-4 w-4 !text-primary"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full flex justify-center mt-12 mb-2 relative">
+                <div class="h-px w-full bg-textLight/40 flex justify-center absolute z-10">
+                </div>
+                <a href=""
+                    class="absolute z-20 -top-5 inline-block rounded-full border border-textLight/70 px-7 py-2 bg-white">همه
+                    مطالب</a>
+            </div>
+        </div>
+        <div class="w-full flex justify-center mt-6">
+            <div class="w-10/12 py-20 bg-primary rounded-xl flex justify-center items-center">
+                <p class="text-xl tablet:text-3xl font-bold text-white">جایگاه بنر برای تبلیغ آفر یا اینستا</p>
+            </div>
+        </div>
+        <div class="w-full bg-white px-4 tablet:px-10 flex flex-wrap py-10">
+            <p class="w-full text-center text-textDark text-2xl pb-10">نظرات مشتریان
+            </p>
+            <div class="flex w-full flex-wrap px-10 tablet:px-0 tablet:flex-nowrap justify-between">
+                <!-- کارت کامنت ها -->
+                <div class="w-full tablet:w-[calc(33.333%-40px)] mb-10">
+                    <div class="w-full rounded-lg px-5 py-4 break-words border border-textDark/40 text-textLight text-sm">
+                        طراحی بسیار جذابی بود <br> ممنون از سرعت زیاد و دقت بالای شما ممنونم ازتون و طراحی مدرن و بسیار جذابی بود
+                    </div>
+                    <div class="w-full flex items-center justify-center mt-2">
+                        <div class="w-12 h-12 rounded-full border border-textLight flex justify-center items-center">
+                            <img src="./img/UserIMgOfComment.svg" class="w-[95%] h-[95%] object-cover rounded-full" alt="">
+                        </div>
+                        <p class="mr-3"><span class="text-textLight font-bold text-sm">سجاد سعیدی</span>&nbsp;-&nbsp;<span class="text-textLight/80 text-sm">شرکت نجفی</span></p>
+                    </div>
+                </div>
+                <!-- کارت کامنت ها -->
+                <div class="w-full tablet:w-[calc(33.333%-40px)] mb-10">
+                    <div class="w-full rounded-lg px-5 py-4 break-words border border-textDark/40 text-textLight text-sm">
+                        طراحی بسیار جذابی بود <br> ممنون از سرعت زیاد و دقت بالای شما ممنونم ازتون و طراحی مدرن و بسیار جذابی بود
+                    </div>
+                    <div class="w-full flex items-center justify-center mt-2">
+                        <div class="w-12 h-12 rounded-full border border-textLight flex justify-center items-center">
+                            <img src="./img/UserIMgOfComment.svg" class="w-[95%] h-[95%] object-cover rounded-full" alt="">
+                        </div>
+                        <p class="mr-3"><span class="text-textLight font-bold text-sm">سجاد سعیدی</span>&nbsp;-&nbsp;<span class="text-textLight/80 text-sm">شرکت نجفی</span></p>
+                    </div>
+                </div>
+                <!-- کارت کامنت ها -->
+                <div class="w-full tablet:w-[calc(33.333%-40px)] mb-10">
+                    <div class="w-full rounded-lg px-5 py-4 break-words border border-textDark/40 text-textLight text-sm">
+                        طراحی بسیار جذابی بود <br> ممنون از سرعت زیاد و دقت بالای شما ممنونم ازتون و طراحی مدرن و بسیار جذابی بود
+                    </div>
+                    <div class="w-full flex items-center justify-center mt-2">
+                        <div class="w-12 h-12 rounded-full border border-textLight flex justify-center items-center">
+                            <img src="./img/UserIMgOfComment.svg" class="w-[95%] h-[95%] object-cover rounded-full" alt="">
+                        </div>
+                        <p class="mr-3"><span class="text-textLight font-bold text-sm">سجاد سعیدی</span>&nbsp;-&nbsp;<span class="text-textLight/80 text-sm">شرکت نجفی</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full bg-white px-4 tablet:px-10 flex flex-wrap pb-10">
+            <p class="w-full text-center text-textDark text-2xl pb-10">نظرات مشتریان
+            </p>
+            <div class="flex w-full justify-between flex-wrap">
+                <img src="./img/OurClientsSVG/Layer 13.svg" class="w-[calc(33.3333%-20px)] tablet:w-[calc(15%-20px)] laptop:w-[calc(8%-8px)] mx-5 mb-3 laptop:mx-2" alt="">
+                <img src="./img/OurClientsSVG/Layer 14.svg" class="w-[calc(33.3333%-20px)] tablet:w-[calc(15%-20px)] laptop:w-[calc(8%-8px)] mx-5 mb-3 laptop:mx-2" alt="">
+                <img src="./img/OurClientsSVG/Layer 15.svg" class="w-[calc(33.3333%-20px)] tablet:w-[calc(15%-20px)] laptop:w-[calc(8%-8px)] mx-5 mb-3 laptop:mx-2" alt="">
+                <img src="./img/OurClientsSVG/Layer 16.svg" class="w-[calc(33.3333%-20px)] tablet:w-[calc(15%-20px)] laptop:w-[calc(8%-8px)] mx-5 mb-3 laptop:mx-2" alt="">
+                <img src="./img/OurClientsSVG/Layer 17.svg" class="w-[calc(33.3333%-20px)] tablet:w-[calc(15%-20px)] laptop:w-[calc(8%-8px)] mx-5 mb-3 laptop:mx-2" alt="">
+                <img src="./img/OurClientsSVG/Layer 18.svg" class="w-[calc(33.3333%-20px)] tablet:w-[calc(15%-20px)] laptop:w-[calc(8%-8px)] mx-5 mb-3 laptop:mx-2" alt="">
+                <img src="./img/OurClientsSVG/Layer 19.svg" class="w-[calc(33.3333%-20px)] tablet:w-[calc(15%-20px)] laptop:w-[calc(8%-8px)] mx-5 mb-3 laptop:mx-2" alt="">
+                <img src="./img/OurClientsSVG/58ac4d880aaa10546adf2711.svg" class="w-[calc(33.3333%-20px)] tablet:w-[calc(15%-20px)] laptop:w-[calc(8%-8px)] mx-5 mb-3 laptop:mx-2" alt="">
+                <img src="./img/OurClientsSVG/Layer 20.svg" class="w-[calc(33.3333%-20px)] tablet:w-[calc(15%-20px)] laptop:w-[calc(8%-8px)] mx-5 mb-3 laptop:mx-2" alt="">
+                <img src="./img/OurClientsSVG/Layer 21.svg" class="w-[calc(33.3333%-20px)] tablet:w-[calc(15%-20px)] laptop:w-[calc(8%-8px)] mx-5 mb-3 laptop:mx-2" alt="">
+            </div>
+        </div>
     </main>
-    <footer></footer>
+    <footer class="pt-10 pb-5 px-5 tablet:px-10 bg-[#f0f0f0] border-t border-textLight/40 flex justify-between">
+        <div class="w-full tablet:w-1/5">
+            <div class="flex flex-col ml-10">
+                <h3 class="text-2xl mb-7 font-bold text-textDark">ارتباط با ما</h3>
+                <p class="text-textLight mb-3">09128737992</p>
+                <p class="text-textLight mb-3">02144966135</p>
+                <p class="text-textLight mb-3">info@mrtarahi.com</p>
+                <p class="text-textLight mb-3 break-words">تهران ، فلکه دوم صادقیه ، ابتدای کاشانی ، برج طلا ، طبقه ششم</p>
+            </div>
+        </div>
+        <div class="w-full tablet:w-1/5">
+            <div class="flex flex-col">
+                <h3 class="text-2xl mb-7 font-bold text-textDark">ارتباط با ما</h3>
+                <a href="#" class="text-textLight mb-3">درباره ما</a>
+                <a href="#" class="text-textLight mb-3">تعرفه طراحی</a>
+                <a href="#" class="text-textLight mb-3">تیم طراحی بنر</a>
+                <a href="#" class="text-textLight mb-3">ثبت سفارش</a>
+                <a href="#" class="text-textLight mb-3">پرداخت آنلاین</a>
+            </div>
+        </div>
+        <div class="w-full tablet:w-1/5">
+            <div class="flex flex-col">
+                <h3 class="text-2xl mb-7 font-bold text-textDark">خدمات مشتریان</h3>
+                <a href="#" class="text-textLight mb-3">شرایط سرویس دهی</a>
+                <a href="#" class="text-textLight mb-3">ارسال تیکیت</a>
+                <a href="#" class="text-textLight mb-3">سوالات متداول</a>
+                <a href="#" class="text-textLight mb-3">وبلاگ اخبار و مقالات</a>
+            </div>
+        </div>
+        <div class="w-full flex flex-wrap tablet:flex-nowrap tablet:w-2/5">
+            <div class="w-full tablet:w-3/5 flex flex-col">
+                <a href="#" class="p-2 rounded-lg bg-white mb-3">
+                    <img src="./img/socialMediaFooter/Path 1920.svg" class="ml-2 inline-block" alt="">
+                    <p class="inline-block">ما را در اینستاگرام دنبال کنید</p>
+                </a>
+                <a href="#" class="p-2 rounded-lg bg-white mb-3">
+                    <img src="./img/socialMediaFooter/XMLID_497_.svg" class="ml-2 inline-block" alt="">
+                    <p class="inline-block">ما را در تلگرام دنبال کنید</p>
+                </a>
+                <a href="#" class="p-2 rounded-lg bg-white mb-3">
+                    <img src="./img/socialMediaFooter/linkedin.svg" class="ml-2 inline-block" alt="">
+                    <p class="inline-block">ما را در لینکدین دنبال کنید</p>
+                </a>
+                <a href="#" class="p-2 rounded-lg bg-white mb-3">
+                    <img src="./img/socialMediaFooter/free-youtube-logo-icon-2431-thumb.svg" class="ml-2 inline-block" alt="">
+                    <p class="inline-block">ما را در یوتیوب دنبال کنید</p>
+                </a>
+                <a href="#" class="p-2 rounded-lg bg-white mb-3">
+                    <img src="./img/socialMediaFooter/Path 260.svg" class="ml-2 inline-block" alt="">
+                    <p class="inline-block">ما را در فیسبوک دنبال کنید</p>
+                </a>
+            </div>
+            <div class="w-full tablet:w-2/5 flex flex-col justify-between items-center py-4">
+                <img src="./img/Enamad.png" class="w-16" alt="">
+                <img src="./img/Samandehi.jpg" class="w-16" alt="">
+            </div>
+        </div>
+    </footer>
 </body>
 <script src="./lib/Flowbit/flowbite.min.js"></script>
 <script src="./js/site.js"></script>
-
 </html>
