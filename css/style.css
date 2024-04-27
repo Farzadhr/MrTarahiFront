@@ -1129,6 +1129,20 @@ input:checked + .toggle-bg {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' width='48' height='48'%3E%3Cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='4' d='M19 12L31 24L19 36'/%3E%3C/svg%3E");
 }
 
+.icon-\[icon-park-outline--double-left\] {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' width='48' height='48'%3E%3Cpath fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='4' d='M24 36L12 24l12-12m12 24L24 24l12-12'/%3E%3C/svg%3E");
+}
+
 .icon-\[icon-park-outline--left\] {
   display: inline-block;
   width: 1em;
@@ -1334,6 +1348,11 @@ input:checked + .toggle-bg {
 .mx-14 {
   margin-left: 3.5rem;
   margin-right: 3.5rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .mx-4 {
@@ -1942,6 +1961,16 @@ input:checked + .toggle-bg {
   padding-bottom: 1rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -2156,21 +2185,21 @@ input:checked + .toggle-bg {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-.progress-bar{
+.progress-bar {
   position: relative;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #575757 linear-gradient(to right , transparent 50% , #0dd5ac 0);
+  background: #575757 linear-gradient(to right, transparent 50%, #0dd5ac 0);
   z-index: 1;
 }
 
-.progress-bar > *{
+.progress-bar>* {
   z-index: 5;
 }
 
-.progress-bar::before{
+.progress-bar::before {
   content: '';
   display: block;
   width: 94%;
@@ -2183,7 +2212,7 @@ input:checked + .toggle-bg {
   z-index: 2 !important;
 }
 
-.csslider > ul > li.scrollable {
+.csslider>ul>li.scrollable {
   overflow-y: scroll;
 }
 
@@ -2201,22 +2230,22 @@ input:checked + .toggle-bg {
   font-family: 'Lato';
 }
 
-#slider1 > ul > li:nth-of-type(3) {
+#slider1>ul>li:nth-of-type(3) {
   background: red;
 }
 
-#slider1 > input:nth-of-type(3):checked ~ ul #bg {
+#slider1>input:nth-of-type(3):checked~ul #bg {
   width: 80%;
   padding: 22px;
   transition: 0.5s 0.5s;
 }
 
-#slider1 > input:nth-of-type(3):checked ~ ul #bg div {
+#slider1>input:nth-of-type(3):checked~ul #bg div {
   transform: translate(0);
   transition: 0.5s 0.9s;
 }
 
-#slider1 > input:nth-of-type(6):checked ~ ul #dex-sign {
+#slider1>input:nth-of-type(6):checked~ul #dex-sign {
   animation: sign-anim 3.5s 0.5s steps(85) forwards;
 }
 
@@ -2589,6 +2618,16 @@ body {
     padding-right: 1.25rem;
   }
 
+  .tablet\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .tablet\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
   .tablet\:pl-20 {
     padding-left: 5rem;
   }
@@ -2642,6 +2681,11 @@ body {
 
   .laptop\:w-\[calc\(8\%-8px\)\] {
     width: calc(8% - 8px);
+  }
+
+  .laptop\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .laptop\:text-sm {
