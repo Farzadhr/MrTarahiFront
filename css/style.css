@@ -1360,6 +1360,10 @@ input:checked + .toggle-bg {
   margin-bottom: 0.25rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1370,6 +1374,22 @@ input:checked + .toggle-bg {
 
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
 }
 
 .ml-3 {
@@ -1422,26 +1442,6 @@ input:checked + .toggle-bg {
 
 .mt-7 {
   margin-top: 1.75rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
-.mb-20 {
-  margin-bottom: 5rem;
-}
-
-.mb-7 {
-  margin-bottom: 1.75rem;
-}
-
-.ml-10 {
-  margin-left: 2.5rem;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
 }
 
 .block {
@@ -1540,6 +1540,10 @@ input:checked + .toggle-bg {
   width: 3rem;
 }
 
+.w-16 {
+  width: 4rem;
+}
+
 .w-3 {
   width: 0.75rem;
 }
@@ -1574,30 +1578,6 @@ input:checked + .toggle-bg {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[calc\(20\%-20px\)\] {
-  width: calc(20% - 20px);
-}
-
-.w-1\/5 {
-  width: 20%;
-}
-
-.w-2\/5 {
-  width: 40%;
-}
-
-.w-3\/4 {
-  width: 75%;
-}
-
-.w-14 {
-  width: 3.5rem;
-}
-
-.w-16 {
-  width: 4rem;
 }
 
 .flex-1 {
@@ -1825,6 +1805,11 @@ input:checked + .toggle-bg {
   border-color: rgb(87 87 87 / 0.7);
 }
 
+.bg-\[\#f0f0f0\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 240 240 / var(--tw-bg-opacity));
+}
+
 .bg-blue-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(26 86 219 / var(--tw-bg-opacity));
@@ -1879,16 +1864,6 @@ input:checked + .toggle-bg {
 
 .bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
-}
-
-.bg-\[white\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#f0f0f0\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(240 240 240 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -1967,17 +1942,16 @@ input:checked + .toggle-bg {
   padding-bottom: 1rem;
 }
 
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
 .pb-1 {
   padding-bottom: 0.25rem;
 }
 
 .pb-10 {
   padding-bottom: 2.5rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
 }
 
 .pl-8 {
@@ -1988,28 +1962,16 @@ input:checked + .toggle-bg {
   padding-right: 2.5rem;
 }
 
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
 .pt-2 {
   padding-top: 0.5rem;
 }
 
 .pt-4 {
   padding-top: 1rem;
-}
-
-.pt-80 {
-  padding-top: 20rem;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
-.pb-5 {
-  padding-bottom: 1.25rem;
-}
-
-.pl-4 {
-  padding-left: 1rem;
 }
 
 .text-center {
@@ -2520,6 +2482,10 @@ body {
     margin-bottom: 0px;
   }
 
+  .tablet\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
   .tablet\:ml-5 {
     margin-left: 1.25rem;
   }
@@ -2560,6 +2526,18 @@ body {
     width: 50%;
   }
 
+  .tablet\:w-1\/5 {
+    width: 20%;
+  }
+
+  .tablet\:w-2\/5 {
+    width: 40%;
+  }
+
+  .tablet\:w-3\/5 {
+    width: 60%;
+  }
+
   .tablet\:w-5\/12 {
     width: 41.666667%;
   }
@@ -2568,8 +2546,8 @@ body {
     width: 58.333333%;
   }
 
-  .tablet\:w-\[calc\(20\%-20px\)\] {
-    width: calc(20% - 20px);
+  .tablet\:w-\[calc\(15\%-20px\)\] {
+    width: calc(15% - 20px);
   }
 
   .tablet\:w-\[calc\(20\%_-_64px\)\] {
@@ -2584,38 +2562,6 @@ body {
     width: calc(33.333% - 40px);
   }
 
-  .tablet\:w-\[calc\(10\%-20px\)\] {
-    width: calc(10% - 20px);
-  }
-
-  .tablet\:w-\[calc\(15\%-20px\)\] {
-    width: calc(15% - 20px);
-  }
-
-  .tablet\:w-1\/5 {
-    width: 20%;
-  }
-
-  .tablet\:w-2\/5 {
-    width: 40%;
-  }
-
-  .tablet\:w-3\/4 {
-    width: 75%;
-  }
-
-  .tablet\:w-1\/4 {
-    width: 25%;
-  }
-
-  .tablet\:w-3\/5 {
-    width: 60%;
-  }
-
-  .tablet\:w-2\/4 {
-    width: 50%;
-  }
-
   .tablet\:flex-row {
     flex-direction: row;
   }
@@ -2628,6 +2574,11 @@ body {
     flex-wrap: nowrap;
   }
 
+  .tablet\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .tablet\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -2636,11 +2587,6 @@ body {
   .tablet\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
-  }
-
-  .tablet\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   .tablet\:pl-20 {
@@ -2690,24 +2636,8 @@ body {
     height: 2.5rem;
   }
 
-  .laptop\:w-\[calc\(10\%-20px\)\] {
-    width: calc(10% - 20px);
-  }
-
   .laptop\:w-\[calc\(25\%_-_40px\)\] {
     width: calc(25% - 40px);
-  }
-
-  .laptop\:w-\[calc\(10\%-0px\)\] {
-    width: calc(10% - 0px);
-  }
-
-  .laptop\:w-\[calc\(10\%-10px\)\] {
-    width: calc(10% - 10px);
-  }
-
-  .laptop\:w-\[calc\(10\%-8px\)\] {
-    width: calc(10% - 8px);
   }
 
   .laptop\:w-\[calc\(8\%-8px\)\] {
