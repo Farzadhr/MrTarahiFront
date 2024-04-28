@@ -40,4 +40,4 @@ module.exports = {
   ],
 }
 
-//npx tailwindcss -i ./css/input.css -o ./css/style.css --watch
+//npx tailwindcss -i ./css/input.css -o ./css/style.css --minify --watch
