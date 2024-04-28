@@ -21,9 +21,11 @@ body {
   .btn-yellow {
     @apply rounded-xl px-4 py-3 bg-yellow text-textDark hover:bg-transparent border-2 border-yellow transition-all duration-300;
   }
+
   .btn-primary {
     @apply rounded-md px-6 py-1 bg-primary text-white hover:bg-transparent border-2 border-primary hover:text-primary transition-all duration-300;
   }
+
   .btn-light {
     @apply rounded-md px-6 py-1 bg-light text-textLight hover:bg-transparent border-2 border-light hover:text-textLight transition-all duration-300;
   }
@@ -495,6 +497,50 @@ body {
     to {
       background-position: 0 -7140px;
     }
+  }
+
+  .talk-bubble {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    border: 1px black solid;
+    border-color: rgb(35 31 32 / 0.4) !important;
+  }
+
+  .triangle.left-top:after {
+    border: 1px black solid;
+    border-color: rgb(35 31 32 / 0.4) !important;
+    border-bottom: none;
+    border-left: none;
+    border-top-right-radius: 90px;
+    content: ' ';
+    position: absolute;
+    width: 35px;
+    height: 38px;
+    left: -20px;
+    right: 0px;
+    top: auto;
+    bottom: -38.5px;
+    background-color: transparent;
+    transform: rotate(0deg);
+  }
+  .triangle.left-top::before{
+    border: 1px black solid;
+    border-color: rgb(35 31 32 / 0.4) !important;
+    border-top: none;
+    border-bottom: none;
+    border-right: 0;
+    content: ' ';
+    position: absolute;
+    width: 37px;
+    height: 39px;
+    left: -20px;
+    right: -1px;
+    top: auto;
+    bottom: -37.5px;
+    background-color: white;
+    border-bottom-right-radius: 5px;
+    transform: rotate(180deg);
   }
 
 }
