@@ -14,11 +14,11 @@
             <div class="icon-[ph--list-bold] h-10 w-10" id="OpenMobileMenu"></div>
             <img src="img/logo.png" class="h-10" alt="Logo Of site">
             <div id="MoblieMenu"
-                class="fixed top-0 -right-full flex flex-col items-center justify-center bg-light overflow-y-scroll py-4 px-5 rounded-l-lg transition-all duration-500">
+                class="fixed top-0 z-50 -right-full flex flex-col items-center justify-center bg-light overflow-y-scroll py-4 px-5 rounded-l-lg transition-all duration-500">
                 <div class="w-full">
                     <div class="icon-[ic--round-close] h-10 w-10" id="CloseMobileMenu"></div>
                 </div>
-                <div class="w-full flex justify-center items-start flex-col">
+                <div class="w-full flex justify-center items-start flex-col z-">
                     <a href="#" class="flex items-center mx-14 mb-3"><span class="icon-[bx--home] h-5 w-5 ml-4"></span>
                         خانه</a>
                     <a href="#" class="flex items-center mx-14 mb-3"><span
@@ -27,7 +27,7 @@
                             class="icon-[bx--dollar] h-5 w-5 ml-4"></span> تعرفه طراحی</a>
                     <a href="#" class="flex items-center mx-14 mb-3"><span
                             class="icon-[icon-park-outline--shopping] h-5 w-5 ml-4"></span> ثبت سفارش</a>
-                    <a href="#" class="flex items-center mx-14 mb-3">آموزش</a>
+                    <a href="#" class="flex items-center mx-14 mb-3"><span class="icon-[ph--student-fill] h-5 w-5 ml-4"></span> آموزش</a>
                     <a href="#" class="flex items-center mx-14 mb-3"><span
                             class="icon-[gravity-ui--at] h-5 w-5 ml-4"></span> ارتباط با ما</a>
 
@@ -101,7 +101,7 @@
                         </div>
                         <!-- Slider indicators -->
                         <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3">
-                            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                            <button type="button" class="ml-3 w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
                                 data-carousel-slide-to="0"></button>
                             <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
                                 data-carousel-slide-to="1"></button>
@@ -294,8 +294,8 @@
             <div class="w-full tablet:w-1/2">
                 <img src="./img/ImgOfNull.png" class="object-cover w-full h-[350px] rounded-lg" alt="">
             </div>
-            <div class="w-full tablet:w-1/2 pl-8">
-                <p class="text-textLight text-sm mt-10 tablet:mt-0 text-justify tablet:text-start">
+            <div class="w-full tablet:w-1/2 tablet:pl-8">
+                <p class="text-textLight text-sm mt-10 tablet:mt-0 text-justify">
                     مستر طراحی از سال 88 در زمینه ی طراحی لوگو ، بنر، تیزر، لندینگ پیج و تبلیغات مختلف
                     فعالیت دارد و این افتخار را دارد که با اکثر برند های ایرانی همکاری داشته، با توجه
                     به شناختی درست از مخاطب و بازار توانسته سایت های زیادی را به مخاطب نشان دهد.
@@ -464,7 +464,7 @@
         <div class="w-full bg-white px-4 tablet:px-10 flex flex-wrap pb-10">
             <p class="w-full text-center text-textDark text-2xl pb-10">نظرات مشتریان
             </p>
-            <div class="flex w-full justify-between flex-wrap">
+            <div class="flex w-full justify-center tablet:justify-between flex-wrap">
                 <img src="./img/OurClientsSVG/Layer 13.svg" class="w-[calc(33.3333%-20px)] tablet:w-[calc(15%-20px)] laptop:w-[calc(8%-8px)] mx-5 mb-3 laptop:mx-2" alt="">
                 <img src="./img/OurClientsSVG/Layer 14.svg" class="w-[calc(33.3333%-20px)] tablet:w-[calc(15%-20px)] laptop:w-[calc(8%-8px)] mx-5 mb-3 laptop:mx-2" alt="">
                 <img src="./img/OurClientsSVG/Layer 15.svg" class="w-[calc(33.3333%-20px)] tablet:w-[calc(15%-20px)] laptop:w-[calc(8%-8px)] mx-5 mb-3 laptop:mx-2" alt="">
@@ -478,7 +478,7 @@
             </div>
         </div>
     </main>
-    <footer class="pt-10 pb-5 px-5 tablet:px-10 bg-[#f0f0f0] border-t border-textLight/40 flex justify-between flex-wrap tablet:flex-nowrap">
+    <footer class="pt-10 pb-5 px-10 bg-[#f0f0f0] border-t border-textLight/40 flex justify-between flex-wrap tablet:flex-nowrap">
         <div class="w-full mb-8 tablet:mb-2 tablet:w-1/5">
             <div class="flex flex-col ml-10">
                 <h3 class="text-2xl mb-7 font-bold text-textDark">ارتباط با ما</h3>
