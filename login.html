@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="flex flex-col tablet:flex-row  tablet:h-screen">
+        <div class="bg-cover bg-center hidden table:w-[46%] tablet:flex justify-center items-center flex-col"
+            style="background-image: url(./img/login-background.png);">
+            <h2 class="text-3xl text-white font-bold">خوش آمدید!</h2>
+            <p class="text-white mt-3 text-lg">اطلاعات خود را وارد کنید و سفر را با ما آغاز کنید</p>
+        </div>
+        <div class="h-screen pb-20 bg-cover bg-center tablet:hidden w-full flex justify-center items-center flex-col"
+            style="background-image: url(./img/login-background-mobile.png);">
+            <div class="my-auto pt-10 text-center">
+                <h2 class="text-3xl text-white font-bold">خوش آمدید!</h2>
+                <p class="text-white mt-6 text-lg">اطلاعات خود را وارد کنید و سفر را با ما آغاز کنید</p>
+            </div>
+            <div class="scroll mt-auto"></div>
+        </div>
+        <div class="flex justify-center items-center w-full tablet:w-[54%] py-10 tablet:py-0">
+            <div class="w-[95%] tablet:w-4/5 h-4/5 rounded-lg flex flex-col items-center py-10"
+                style="box-shadow: 0px 0px 40px 1px rgba(53, 48, 48, 0.575);">
+                <img src="./img/logo.png" loading="lazy" alt="">
+                <p class="text-2xl mt-8 text-textLight">ورود به حساب کاربری</p>
+                <div class="flex items-center justify-center flex-col w-11/12 px-10 my-auto pt-8">
+                    <div class="tablet:px-5 tablet:py-5 p-3 border-r-4 rounded-lg border-primary flex"
+                        style="box-shadow: 0px 0px 20px 1px rgba(53, 48, 48, 0.26);">
+                        <div class="text-primary pl-3 border-l border-slate-400 flex items-center">
+                            <span class="icon-[typcn--phone-outline] w-6 h-6"></span>
+                        </div>
+                        <input type="text" placeholder="شماره تلفن خود را وارد کنید"
+                            class="text-textLight border-0 outline-0 focus-visible:border-0 focus-within:border-0 bg-transparent focus:border-0 focus:shadow-none focus:ring-0 p-0 pr-4">
+                    </div>
+                    <div class="flex mt-5">
+                        <input checked id="teal-checkbox" type="checkbox" value=""
+                            class="w-5 h-5 text-primary bg-gray-100 border-gray-300 rounded focus:ring-primary focus:ring-2">
+                        <label for="" class="pr-3 text-textLight">مرا به خاطر بیاور!</label>
+                    </div>
+                </div>
+                <div class="tablet:mt-auto flex justify-center items-center mt-4">
+                    <button class="btn-primary py-1 px-6 text-xl flex items-center">ارسال کد &nbsp; <span
+                            class="icon-[solar--login-3-bold]"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./lib/Flowbit/flowbite.min.js"></script>
+<script src="./js/site.js"></script>
+
+</html>
