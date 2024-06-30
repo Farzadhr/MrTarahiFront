@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="mx-auto">
+        <div class="flex tablet:hidden w-full justify-between px-5 py-3">
+            <div class="icon-[ph--list-bold] h-10 w-10" id="OpenMobileMenu"></div>
+            <img src="img/logo.png" class="h-10" alt="Logo Of site">
+            <div id="MoblieMenu"
+                class="fixed top-0 z-50 -right-full flex flex-col items-center justify-center bg-light overflow-y-scroll py-4 px-5 rounded-l-lg transition-all duration-500">
+                <div class="w-full">
+                    <div class="icon-[ic--round-close] h-10 w-10" id="CloseMobileMenu"></div>
+                </div>
+                <div class="w-full flex justify-center items-start flex-col">
+                    <a href="#" class="flex items-center mx-14 mb-3"><span class="icon-[bx--home] h-5 w-5 ml-4"></span>
+                        خانه</a>
+                    <a href="#" class="flex items-center mx-14 mb-3"><span
+                            class="icon-[bxs--layer] h-5 w-5 ml-4"></span> نمونه کارها</a>
+                    <a href="#" class="flex items-center mx-14 mb-3"><span
+                            class="icon-[bx--dollar] h-5 w-5 ml-4"></span> تعرفه طراحی</a>
+                    <a href="#" class="flex items-center mx-14 mb-3"><span
+                            class="icon-[icon-park-outline--shopping] h-5 w-5 ml-4"></span> ثبت سفارش</a>
+                    <a href="#" class="flex items-center mx-14 mb-3"> <span
+                            class="icon-[ph--student-fill] h-5 w-5 ml-4"></span> آموزش</a>
+                    <a href="#" class="flex items-center mx-14 mb-3"><span
+                            class="icon-[gravity-ui--at] h-5 w-5 ml-4"></span> ارتباط با ما</a>
+
+                    <a href="#" class="flex items-center mx-14 mt-10"><span
+                            class="icon-[octicon--feed-person-16] h-6 w-6 ml-5 bg-primary"></span> ورود/ثبت نام</a>
+                </div>
+            </div>
+        </div>
+        <div class="hidden w-full tablet:flex justify-between px-5 py-3">
+            <img src="img/logo.png" class="h-10 tablet:h-8 laptop:h-10" alt="Logo Of site">
+            <div class="w-full flex items-center pr-10 tablet:pr-5">
+                <a href="#" class="flex items-center mx-4 tablet:text-xs laptop:text-sm desktop:text-base"><span
+                        class="icon-[bx--home] h-5 w-5 ml-4"></span> خانه</a>
+                <div href="#"
+                    class="flex items-center mx-4 tablet:text-xs cursor-pointer laptop:text-sm desktop:text-base megamenu">
+                    <span class="icon-[bxs--layer] h-5 w-5 ml-4 cursor-pointer"></span> نمونه
+                    کارها
+                    <div
+                        class="absolute z-[999999] top-[4.25rem] bg-white rounded-b-xl grid grid-cols-2 gap-4 py-5 px-8 invisible opacity-0 transition-all duration-300">
+                        <a href="" class="group w-64 rounded-lg hover:bg-primary transition-all duration-100 px-3 py-1">
+                            <p class="group-hover:text-white transition-all duration-100">بنر گیف</p>
+                            <p class="text-sm text-textLight group-hover:text-light transition-all duration-100">مشاهده
+                                نمونه</p>
+                        </a>
+                        <a href="" class="group w-64 rounded-lg hover:bg-primary transition-all duration-100 px-3 py-1">
+                            <p class="group-hover:text-white transition-all duration-100">سایت</p>
+                            <p class="text-sm text-textLight group-hover:text-light transition-all duration-100">مشاهده
+                                نمونه</p>
+                        </a>
+                        <a href="" class="group w-64 rounded-lg hover:bg-primary transition-all duration-100 px-3 py-1">
+                            <p class="group-hover:text-white transition-all duration-100">موشن گرافیک</p>
+                            <p class="text-sm text-textLight group-hover:text-light transition-all duration-100">مشاهده
+                                نمونه</p>
+                        </a>
+                        <a href="" class="group w-64 rounded-lg hover:bg-primary transition-all duration-100 px-3 py-1">
+                            <p class="group-hover:text-white transition-all duration-100">سوشیال مدیا</p>
+                            <p class="text-sm text-textLight group-hover:text-light transition-all duration-100">مشاهده
+                                نمونه</p>
+                        </a>
+                        <a href="" class="group w-64 rounded-lg hover:bg-primary transition-all duration-100 px-3 py-1">
+                            <p class="group-hover:text-white transition-all duration-100">لندینگ پیج</p>
+                            <p class="text-sm text-textLight group-hover:text-light transition-all duration-100">مشاهده
+                                نمونه</p>
+                        </a>
+                        <a href="" class="group w-64 rounded-lg hover:bg-primary transition-all duration-100 px-3 py-1">
+                            <p class="group-hover:text-white transition-all duration-100">ست اداری</p>
+                            <p class="text-sm text-textLight group-hover:text-light transition-all duration-100">مشاهده
+                                نمونه</p>
+                        </a>
+                        <a href="" class="group w-64 rounded-lg hover:bg-primary transition-all duration-100 px-3 py-1">
+                            <p class="group-hover:text-white transition-all duration-100">پوستر</p>
+                            <p class="text-sm text-textLight group-hover:text-light transition-all duration-100">مشاهده
+                                نمونه</p>
+                        </a>
+                        <a href="" class="group w-64 rounded-lg hover:bg-primary transition-all duration-100 px-3 py-1">
+                            <p class="group-hover:text-white transition-all duration-100">برشور</p>
+                            <p class="text-sm text-textLight group-hover:text-light transition-all duration-100">مشاهده
+                                نمونه</p>
+                        </a>
+                        <a href="" class="group w-64 rounded-lg hover:bg-primary transition-all duration-100 px-3 py-1">
+                            <p class="group-hover:text-white transition-all duration-100">کاتالوگ</p>
+                            <p class="text-sm text-textLight group-hover:text-light transition-all duration-100">مشاهده
+                                نمونه</p>
+                        </a>
+                        <a href="" class="group w-64 rounded-lg hover:bg-primary transition-all duration-100 px-3 py-1">
+                            <p class="group-hover:text-white transition-all duration-100">کاتالوگ دیجیتال</p>
+                            <p class="text-sm text-textLight group-hover:text-light transition-all duration-100">مشاهده
+                                نمونه</p>
+                        </a>
+                    </div>
+                </div>
+                <a href="#" class="flex items-center mx-4 tablet:text-xs laptop:text-sm desktop:text-base"><span
+                        class="icon-[bx--dollar] h-5 w-5 ml-4"></span> تعرفه
+                    طراحی</a>
+                <a href="#" class="flex items-center mx-4 tablet:text-xs laptop:text-sm desktop:text-base"><span
+                        class="icon-[icon-park-outline--shopping] h-5 w-5 ml-4"></span> ثبت سفارش</a>
+                <a href="#" class="flex items-center mx-4 tablet:text-xs laptop:text-sm desktop:text-base"><span
+                        class="icon-[ph--student-fill] h-5 w-5 ml-4"></span> آموزش</a>
+                <a href="#" class="flex items-center mx-4 tablet:text-xs laptop:text-sm desktop:text-base"><span
+                        class="icon-[gravity-ui--at] h-5 w-5 ml-4"></span>
+                    ارتباط با ما</a>
+            </div>
+            <a href="#" class="flex items-center flex-shrink-0"><span
+                    class="icon-[octicon--feed-person-16] h-6 w-6 ml-5 bg-primary"></span> ورود/ثبت نام</a>
+        </div>
+    </header>
+    <main>
+        <div class="py-5 px-5 tablet:px-10 flex justify-center items-center flex-col">
+            <div class="w-1/2 rounded-t-3xl py-6 bg-primary flex items-center justify-center">
+                <h1 class="text-2xl text-white">ثبت سفارش بنر گیف</h1>
+            </div>
+            <div class="w-full rounded-lg px-4 py-8 flex flex-col"
+                style="box-shadow: 0px 0px 10px 1px rgba(34, 34, 34, 0.37);">
+                <p class="text-lg mb-3 text-textLight font-bold">سفارش طراحی</p>
+                <div class="mb-9 px-3">
+                    <p class="text-textLight text-base tablet:text-lg">نام و نام خانوادگی <span
+                            class="mr-2 text-red-700">(ضروری)</span></p>
+                    <div class="w-full mt-2">
+                        <input type="text" class="cart-input w-full " placeholder="نام و نام خانوادگی خود را وارد کنید">
+                    </div>
+                </div>
+                <div class="mb-9 px-3">
+                    <p class="text-textLight text-base tablet:text-lg">شماره تماس <span
+                            class="mr-2 text-red-700">(ضروری)</span></p>
+                    <div class="w-full mt-2">
+                        <input type="text" class="cart-input w-full " placeholder="شماره تلفن خود را وارد کنید">
+                    </div>
+                </div>
+                <div class="mb-9 px-3">
+                    <p class="text-textLight text-base tablet:text-lg">نوع خدمت طراحی <span
+                            class="mr-2 text-red-700">(ضروری)</span></p>
+                    <div class="w-full grid grid-cols-2 tablet:grid-cols-3 mt-2">
+                        <div class="mb-3">
+                            <input type="radio" name="productType"> <label for=""
+                                class="text-textLight text-sm tablet:text-base">گیف 600 * 120</label>
+                        </div>
+                        <div class="mb-3">
+                            <input type="radio" name="productType"> <label for=""
+                                class="text-textLight text-sm tablet:text-base">گیف یکتانت (6 سایز)</label>
+                        </div>
+                        <div class="mb-3">
+                            <input type="radio" name="productType"> <label for=""
+                                class="text-textLight text-sm tablet:text-base">گیف صباویژن (10 سایز)</label>
+                        </div>
+                        <div class="mb-3">
+                            <input type="radio" name="productType"> <label for=""
+                                class="text-textLight text-sm tablet:text-base">بنر اینستاگرام</label>
+                        </div>
+                        <div class="mb-3">
+                            <input type="radio" name="productType"> <label for=""
+                                class="text-textLight text-sm tablet:text-base">بنر تلگرام</label>
+                        </div>
+                        <div class="mb-3">
+                            <input type="radio" name="productType"> <label for=""
+                                class="text-textLight text-sm tablet:text-base">بنر همسان</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-9 px-3">
+                    <p class="text-textLight text-base tablet:text-lg">انتخاب سایز های دیگر <span
+                            class="mr-2 text-red-700">(ضروری)</span></p>
+                    <div class="w-full mt-2">
+                        <button type="button" role="button" class="btn-primary GifSize" data-role="CloseMultiSize">تک
+                            سایز</button>
+                        <button type="button" role="button" class="btn-light mr-5 GifSize" data-role="OpenMultiSize">چند
+                            سایز</button>
+                    </div>
+                    <div class="w-full flex justify-start flex-wrap mt-3" id="MultiSizeGifContainer">
+                        <div class="ml-6">
+                            <input type="checkbox">
+                            <label for="" class="text-textLight">600×120</label>
+                        </div>
+                        <div class="ml-6">
+                            <input type="checkbox">
+                            <label for="" class="text-textLight">600×120</label>
+                        </div>
+                        <div class="ml-6">
+                            <input type="checkbox">
+                            <label for="" class="text-textLight">600×120</label>
+                        </div>
+                        <div class="ml-6">
+                            <input type="checkbox">
+                            <label for="" class="text-textLight">600×120</label>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-9 px-3">
+                    <p class="text-textLight text-base tablet:text-lg">توضیحات <span
+                            class="mr-2 text-red-700">(ضروری)</span></p>
+                    <textarea id="" class="cart-input w-full" rows="3"
+                        placeholder="توضیحات خود را وارد کنید"></textarea>
+                </div>
+                <div class="mb-9 px-3">
+                    <p class="text-textLight text-base tablet:text-lg">فایل ها ضمیمه</p>
+                    <div class="flex items-center justify-center w-full">
+                        <label for="dropzone-file"
+                            class="flex flex-col items-center justify-center w-full h-24 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                            <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                                <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
+                                </svg>
+                                <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span
+                                        class="font-semibold">برای آپلود فایل کلیک کنید</span></p>
+                            </div>
+                            <input id="dropzone-file" type="file" class="hidden" />
+                        </label>
+                    </div>
+                </div>
+                <div class="mb-9 px-3">
+                    <p class="text-xl">قیمت کل سفارش : <span class="font-bold text-green-700">2.500.000</span> تومان</p>
+                </div>
+                <div class="mb-9 px-5 flex justify-between">
+                    <div class="flex w-full tablet:w-1/3">
+                        <input type="text" class="cart-input rounded-l-none border-l-0 w-2/3" placeholder="کد تخفیف را وارد کنید">
+                        <button type="button" role="button" class="px-2 rounded-l-lg bg-primary text-white w-1/3">ثبت کد تخفیف</button>
+                    </div>
+                    <div class="flex w-full tablet:w-1/3">
+                        <button type="submit" class="btn-primary w-full font-bold">خرید و ثبت سفارش</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer
+        class="pt-10 pb-5 px-10 bg-[#f0f0f0] border-t border-textLight/40 flex justify-between flex-wrap tablet:flex-nowrap">
+        <div class="w-full mb-8 tablet:mb-2 tablet:w-1/5">
+            <div class="flex flex-col ml-10">
+                <h3 class="text-2xl mb-7 font-bold text-textDark">ارتباط با ما</h3>
+                <p class="text-textLight mb-3">09128737992</p>
+                <p class="text-textLight mb-3">02144966135</p>
+                <p class="text-textLight mb-3">info@mrtarahi.com</p>
+                <p class="text-textLight mb-3 break-words">تهران ، فلکه دوم صادقیه ، ابتدای کاشانی ، برج طلا ، طبقه ششم
+                </p>
+            </div>
+        </div>
+        <div class="w-full mb-8 tablet:mb-2 tablet:w-1/5">
+            <div class="flex flex-col">
+                <h3 class="text-2xl mb-7 font-bold text-textDark">ارتباط با ما</h3>
+                <a href="#" class="text-textLight mb-3">درباره ما</a>
+                <a href="#" class="text-textLight mb-3">تعرفه طراحی</a>
+                <a href="#" class="text-textLight mb-3">تیم طراحی بنر</a>
+                <a href="#" class="text-textLight mb-3">ثبت سفارش</a>
+                <a href="#" class="text-textLight mb-3">پرداخت آنلاین</a>
+            </div>
+        </div>
+        <div class="w-full mb-8 tablet:mb-2 tablet:w-1/5">
+            <div class="flex flex-col">
+                <h3 class="text-2xl mb-7 font-bold text-textDark">خدمات مشتریان</h3>
+                <a href="#" class="text-textLight mb-3">شرایط سرویس دهی</a>
+                <a href="#" class="text-textLight mb-3">ارسال تیکیت</a>
+                <a href="#" class="text-textLight mb-3">سوالات متداول</a>
+                <a href="#" class="text-textLight mb-3">وبلاگ اخبار و مقالات</a>
+            </div>
+        </div>
+        <div class="w-full mb-8 tablet:mb-2 flex flex-col tablet:flex-nowrap tablet:w-1/5">
+            <a href="#" class="p-2 rounded-lg bg-white mb-3 flex justify-center items-center">
+                <img src="./img/socialMediaFooter/Path 1920.svg" class="ml-2 inline-block" alt="">
+                <p class="inline-block tablet:text-xs laptop:text-base">اینستاگرام ما</p>
+            </a>
+            <div class="w-full flex justify-around px-10">
+                <a href="#" class="p-2 rounded-lg mb-3">
+                    <img src="./img/socialMediaFooter/XMLID_497_.svg" class="inline-block" alt="">
+                </a>
+                <a href="#" class="p-2 rounded-lg mb-3">
+                    <img src="./img/socialMediaFooter/linkedin.svg" class="inline-block" alt="">
+                </a>
+                <a href="#" class="p-2 rounded-lg mb-3">
+                    <img src="./img/socialMediaFooter/free-youtube-logo-icon-2431-thumb.svg" class="inline-block"
+                        alt="">
+                </a>
+                <a href="#" class="p-2 rounded-lg mb-3">
+                    <img src="./img/socialMediaFooter/Path 260.svg" class=" inline-block" alt="">
+                </a>
+            </div>
+            <div class="w-full flex justify-center items-center py-4">
+                <img src="./img/Enamad.png" class="w-16 ml-5" alt="">
+                <img src="./img/Samandehi.jpg" class="w-16" alt="">
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./lib/Flowbit/flowbite.min.js"></script>
+<script src="./lib/jquery.min.js"></script>
+<script src="./js/site.js"></script>
+<script>
+    $("#MultiSizeGifContainer").hide();
+    $(".GifSize").click(function (e) {
+        e.preventDefault();
+        var role = $(this).attr("data-role");
+
+        if (role == "CloseMultiSize") {
+            $(`#MultiSizeGifContainer input[type="checkbox"]`).prop("checked",false);
+            console.log($(`#MultiSizeGifContainer input[type="checkbox"]`));
+            $("#MultiSizeGifContainer").slideUp();
+            var selectedBtn = e.target.parentNode.querySelector(".btn-primary")
+            $(selectedBtn).removeClass("btn-primary");
+            $(selectedBtn).addClass("btn-light");
+            $(e.target).removeClass("btn-light");
+            $(e.target).addClass("btn-primary");
+        } else {
+            $("#MultiSizeGifContainer").slideDown();
+            var selectedBtn = e.target.parentNode.querySelector(".btn-primary")
+            $(selectedBtn).removeClass("btn-primary");
+            $(selectedBtn).addClass("btn-light");
+            $(e.target).removeClass("btn-light");
+            $(e.target).addClass("btn-primary");
+        }
+    });
+</script>
+
+</html>

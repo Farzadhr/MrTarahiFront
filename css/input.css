@@ -36,6 +36,10 @@ body {
   .tag-secondary {
     @apply rounded-lg px-4 py-1 bg-secondary text-white hover:bg-white hover:text-secondary;
   }
+
+  .cart-input{
+    @apply rounded-lg border border-primary focus-within:shadow-none focus:border-primary focus:shadow-none focus:ring-0;
+  }
 }
 
 @layer utilities {
