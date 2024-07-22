@@ -32,6 +32,8 @@ module.exports = {
 
       'desktop': '1280px',
       // => @media (min-width: 1280px) { ... }
+      'tv': '1900px',
+      // => @media (min-width: 1280px) { ... }
     },
     fontSize: {
       'xs':['9px','14px'],
