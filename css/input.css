@@ -13,14 +13,21 @@ body {
 
 * {
   font-family: Iran;
+  font-size: 13px;
+  line-height: 22px;
 }
 
-.megamenu:hover > div{
+.megamenu:hover>div {
   visibility: visible;
   opacity: 1;
 }
 
+.prose>.image_resized>img {
+  width: 100%;
+}
+
 @layer components {
+
   .btn-yellow {
     @apply rounded-xl px-4 py-3 bg-yellow text-textDark hover:bg-transparent border-2 border-yellow transition-all duration-300;
   }
@@ -37,8 +44,16 @@ body {
     @apply rounded-lg px-4 py-1 bg-secondary text-white hover:bg-white hover:text-secondary;
   }
 
-  .cart-input{
-    @apply rounded-lg border border-primary focus-within:shadow-none focus:border-primary focus:shadow-none focus:ring-0;
+  .cart-input {
+    @apply rounded-lg border border-primary focus-within:shadow-none focus:border-primary focus:shadow-none focus:ring-0 placeholder:text-textLight/30;
+  }
+
+  .pagination-btn-active {
+    @apply w-8 h-8 rounded-full flex items-center justify-center bg-primary;
+  }
+
+  .pagination-btn {
+    @apply w-8 h-8 rounded-full flex items-center justify-center bg-gray-200;
   }
 }
 
@@ -531,7 +546,8 @@ body {
     background-color: transparent;
     transform: rotate(0deg);
   }
-  .triangle.left-top::before{
+
+  .triangle.left-top::before {
     border: 1px black solid;
     border-color: rgb(35 31 32 / 0.4) !important;
     border-top: none;
@@ -558,6 +574,7 @@ body {
     position: relative;
     animation: down 1.5s infinite;
     -webkit-animation: down 1.5s infinite;
+
     &::before {
       content: '';
       position: absolute;
@@ -570,28 +587,37 @@ body {
       transform: rotate(-45deg);
     }
   }
-  
+
   @keyframes down {
     0% {
       transform: translate(0);
     }
+
     20% {
       transform: translateY(15px);
     }
+
     40% {
       transform: translate(0);
     }
   }
-  
+
   @-webkit-keyframes down {
     0% {
       transform: translate(0);
     }
+
     20% {
       transform: translateY(15px);
     }
+
     40% {
       transform: translate(0);
     }
+  }
+
+  .background_site_contactUs {
+    background: rgb(34,37,41);
+    background: linear-gradient(180deg, rgba(34,37,41,0.6110819327731092) 26%, rgba(245,245,245,1) 99%);
   }
 }
