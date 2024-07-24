@@ -65,7 +65,8 @@
             بنر گیف
         </div>
         <div class="bg-light py-5 px-4 tablet:px-10">
-            <p class="flex items-center text-xs tablet:text-base px-4 tablet:px-10">مستر طراحی <span class="icon-[icon-park-outline--double-left] mx-2"></span>
+            <p class="flex items-center text-xs tablet:text-base px-4 tablet:px-10">مستر طراحی <span
+                    class="icon-[icon-park-outline--double-left] mx-2"></span>
                 نمونه کار <span class="icon-[icon-park-outline--double-left] mx-2"></span> گیف</p>
         </div>
         <div class="w-full py-5 px-4 tablet:px-10">
@@ -91,7 +92,7 @@
         </div>
         <div class="w-full pb-5 px-4 tablet:px-10 flex justify-start flex-wrap">
             <div class="w-full tablet:w-[calc(50%-80px)] laptop:w-[calc(25%-80px)] mx-4 tablet:mx-10 mb-5">
-                <img src="./img/ImgOfNull.png" class="w-full" alt="">
+                <img src="./img/ImgOfNull.png" class="w-full showImg" alt="">
             </div>
             <div class="w-full tablet:w-[calc(50%-80px)] laptop:w-[calc(25%-80px)] mx-4 tablet:mx-10 mb-5">
                 <img src="./img/ImgOfNull.png" class="w-full" alt="">
@@ -135,7 +136,8 @@
         <div class="w-full py-8 px-4 tablet:px-10 bg-light">
             <h2 class="text-lg tablet:text-2xl text-textLight text-center flex items-center justify-center">سوالی دارید؟
                 <span dir="ltr" class="mr-2">0912 873 79 92</span> <span
-                    class="icon-[solar--phone-broken] text-primary h-6 w-6 tablet:h-8 tablet:w-8"></span></h2>
+                    class="icon-[solar--phone-broken] text-primary h-6 w-6 tablet:h-8 tablet:w-8"></span>
+            </h2>
             <p class="break-words mt-5 text-sm tablet:text-base text-textLight">هزینه طراحی بنر گیف در مستر طراحی تنها
                 500 هزار تومان می باشد و این شامل هز سایزی به انتخاب شما میشود.</p>
             <p class="break-words mt-5 text-sm tablet:text-base text-textLight"><span class="text-primary">ویژه :
@@ -146,7 +148,8 @@
             <h2 class="text-lg tablet:text-2xl text-textDark text-center">اگر فعلا نمی خواهید بنر سفارش دهید ، مقالات
                 زیر را بخوانید</h2>
             <div class="flex flex-wrap mt-5">
-                <div class="w-full tablet:w-[calc(50%-24px)] mx-3 flex flex-col tablet:flex-row mb-5 border border-textLight/40 rounded-xl p-2">
+                <div
+                    class="w-full tablet:w-[calc(50%-24px)] mx-3 flex flex-col tablet:flex-row mb-5 border border-textLight/40 rounded-xl p-2">
                     <div class="w-full tablet:w-5/12 tablet:ml-5">
                         <img src="./img/blogtestimg.png" class="rounded-lg w-full tablet:h-full object-cover" alt="">
                     </div>
@@ -163,7 +166,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-full tablet:w-[calc(50%-24px)] mx-3 flex flex-col tablet:flex-row mb-5 border border-textLight/40 rounded-xl p-2">
+                <div
+                    class="w-full tablet:w-[calc(50%-24px)] mx-3 flex flex-col tablet:flex-row mb-5 border border-textLight/40 rounded-xl p-2">
                     <div class="w-full tablet:w-5/12 tablet:ml-5">
                         <img src="./img/blogtestimg.png" class="rounded-lg w-full tablet:h-full object-cover" alt="">
                     </div>
@@ -175,7 +179,8 @@
                             می شوند.
                         </p>
                         <div class="flex justify-between items-center mt-5">
-                            <p class="text-textLight text-xs">12 خرداد 99</p><a class="text-textLight flex items-center text-xs">ادامه
+                            <p class="text-textLight text-xs">12 خرداد 99</p><a
+                                class="text-textLight flex items-center text-xs">ادامه
                                 مطلب <span class="icon-[icon-park-outline--left] h-4 w-4 !text-primary"></span></a>
                         </div>
                     </div>
@@ -244,8 +249,50 @@
             </div>
         </div>
     </footer>
+    <div class="fixed w-full h-full top-0 left-0 bg-gray-950/50 flex justify-center items-center"
+        id="ProductSampleImgContainer">
+        <div class="inline-flex px-4 py-2 rounded-lg bg-black  fixed top-5 left-5 z-50">
+            <span class="icon-[ic--outline-close] w-8 h-8 text-white mx-2"
+                id="CloseProductSampleImgContainer"></span>
+            <button id="zoomInbtn"><span class="icon-[mingcute--zoom-in-fill] w-8 h-8 text-white mx-2"></span></button>
+            <button id="zoomOutbtn"><span class="icon-[mingcute--zoom-out-fill] w-8 h-8 text-white mx-2"></span></button>
+        </div>
+        <img src="" alt="" id="ShowImgId">
+    </div>
 </body>
 <script src="./lib/Flowbit/flowbite.min.js"></script>
+<script src="./lib/jquery.min.js"></script>
 <script src="./js/site.js"></script>
+<script src="./lib/panzoom.min.js"></script>
+<script>
+    const elem = document.getElementById('ShowImgId')
+    const panzoom = Panzoom(elem, {
+        maxScale: 5,
+        startScale: 0.5,
+        disablePan:true,
+    })
+    panzoom.pan(10, 10)
+    panzoom.zoom(2, { animate: true })
+    document.getElementById("zoomInbtn").addEventListener('click', panzoom.zoomIn)
+    document.getElementById("zoomOutbtn").addEventListener('click', panzoom.zoomOut)
+    elem.parentElement.addEventListener('wheel', panzoom.zoomWithWheel)
+
+
+    $('#ProductSampleImgContainer').hide();
+    $(".showImg").click(function (e) {
+        e.preventDefault();
+        var imgsrc = $(this).attr("src");
+        $("#ProductSampleImgContainer img").attr("src", imgsrc);
+        $("#ProductSampleImgContainer").show(500);
+        // const panzoom = Panzoom(elem)
+        // panzoom.reset;
+    });
+    $("#CloseProductSampleImgContainer").click(function (e) {
+        e.preventDefault();
+        $('#ProductSampleImgContainer').hide();
+        // const panzoom = Panzoom(elem)
+        // panzoom.reset;
+    });
+</script>
 
 </html>

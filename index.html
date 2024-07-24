@@ -119,7 +119,7 @@
         <!-- هدر صفحه اصلی  -->
         <div class="w-full py-10 bg-primary px-2 tablet:px-10 desktop:px-16 tv:px-48">
             <div class="container flex tablet:flex-row-reverse flex-wrap">
-                <div class="w-full tablet:w-7/12 tablet:px-10">
+                <div class="w-full tablet:w-7/12 tablet:px-10 tv:px-32">
 
 
                     <div id="default-carousel" class="relative w-full" data-carousel="slide">
@@ -133,7 +133,7 @@
                             </div>
                             <!-- Item 2 -->
                             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                                <img src="img/carousel-1.svg"
+                                <img src="img/contact (1).jpg"
                                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                                     alt="...">
                             </div>
@@ -192,9 +192,13 @@
                         <img src="./img/Layer 3.png" class="inline-block" alt="mini logo for banner" loading="lazy">
                         <h1 class="text-3xl mr-4 text-white">مستر طراحی</h1>
                     </div>
-                    <p class="mt-7 tablet:text-4xl text-white">طراحی بنر ، موشن گرافیک ، لوگو و تیزر تبلیغاتی</p>
-                    <p class="text-textLight mt-7 text-lg">مستر طراحی ترکیبی از کیفیت حرفه ای ، قیمت مناسب و ارائه خدمات
-                        سریع به مشتریان است.</p>
+                    <div class="mt-7 [&>*]:tablet:text-4xl [&>*]:text-white">
+                        <p>طراحی بنر ، موشن گرافیک ، لوگو و تیزر تبلیغاتی</p>
+                    </div>
+                    <div class="[&>*]:text-textLight mt-7 [&>*]:text-lg">
+                        <p>>مستر طراحی ترکیبی از کیفیت حرفه ای ، قیمت مناسب و ارائه خدمات
+                            سریع به مشتریان است.</p>
+                    </div>
                     <a href="#" class="mt-7 btn-yellow text-lg font-bold flex justify-between">ثبت سفارش <span
                             class="icon-[icon-park--left] h-6 w-6"></span></a>
                 </div>
@@ -217,8 +221,10 @@
                     class="w-full tablet:w-[calc(33.33%_-_40px)] laptop:w-[calc(25%_-_40px)] desktop:w-[calc(20%_-_40px)] tablet:mx-5 mb-5 p-1 rounded-lg bg-white hover:bg-primary transition-all duration-200 group hover:shadow-lg">
                     <img src="./img/ImgOfNull.png" alt="" class="object-cover w-full rounded-lg">
                     <div class="flex justify-between items-center px-5 pt-4 pb-1">
-                        <p class="font-bold text-lg tablet:text-base tv:text-base text-textDark group-hover:text-white">بنر گیف</p><span
-                            class="text-xs tv:text-sm text-textLight flex items-center group-hover:text-white">مشاهده نمونه <span
+                        <p class="font-bold text-lg tablet:text-base tv:text-base text-textDark group-hover:text-white">
+                            بنر گیف</p><span
+                            class="text-xs tv:text-sm text-textLight flex items-center group-hover:text-white">مشاهده
+                            نمونه <span
                                 class="icon-[icon-park-outline--left] h-4 w-4 !text-primary group-hover:!text-white"></span></span>
                     </div>
                 </a>
@@ -313,51 +319,59 @@
                 <img src="./img/ImgOfNull.png" class="object-cover w-full h-[350px] rounded-lg" alt="">
             </div>
             <div class="w-full tablet:w-1/2 tablet:pl-8">
-                <p class="text-textLight mt-10 tablet:mt-0 text-justify">
-                    مستر طراحی از سال 88 در زمینه ی طراحی لوگو ، بنر، تیزر، لندینگ پیج و تبلیغات مختلف
-                    فعالیت دارد و این افتخار را دارد که با اکثر برند های ایرانی همکاری داشته، با توجه
-                    به شناختی درست از مخاطب و بازار توانسته سایت های زیادی را به مخاطب نشان دهد.
-                    در عصر حاضر که فناوری و اطلاعات با سرعت زیادی رو به پیشرفت است، تبلیغات مجازی
-                    مانند استوری و پست شبکه های اجتماعی از اهمیت بالایی برخوردار است، که تمامی این موارد
-                    توسط تیم حرفه ای، مستر طراحی قابل اجراست<br><br>نو آوری و خلاقیت از ارکان اصلی
-                    تیم ماست که صحت این امر در نمونه کارهای داخل سایت مشهود است.<br><br> از دیگر خصوصیات ما،
-                    تعرفه های مقرون به صرفه و سرعت بالا، در تحویل سفارشات است.
-                    <br><br> تمام تلاش ما این است تا در کمترین زمان ممکن، با حفظ کیفیت و هویت برند شما سفارشات را تحویل
-                    دهیم.
-                </p>
+                <div class="text-textLight mt-10 tablet:mt-0 [&>*]:text-justify">
+                    <p>
+                        مستر طراحی از سال 88 در زمینه ی طراحی لوگو ، بنر، تیزر، لندینگ پیج و تبلیغات مختلف
+                        فعالیت دارد و این افتخار را دارد که با اکثر برند های ایرانی همکاری داشته، با توجه
+                        به شناختی درست از مخاطب و بازار توانسته سایت های زیادی را به مخاطب نشان دهد.
+                        در عصر حاضر که فناوری و اطلاعات با سرعت زیادی رو به پیشرفت است، تبلیغات مجازی
+                        مانند استوری و پست شبکه های اجتماعی از اهمیت بالایی برخوردار است، که تمامی این موارد
+                        توسط تیم حرفه ای، مستر طراحی قابل اجراست<br><br>نو آوری و خلاقیت از ارکان اصلی
+                        تیم ماست که صحت این امر در نمونه کارهای داخل سایت مشهود است.<br><br> از دیگر خصوصیات ما،
+                        تعرفه های مقرون به صرفه و سرعت بالا، در تحویل سفارشات است.
+                        <br><br> تمام تلاش ما این است تا در کمترین زمان ممکن، با حفظ کیفیت و هویت برند شما سفارشات را
+                        تحویل
+                        دهیم.
+                    </p>
+                </div>
             </div>
         </div>
         <!-- اطلاعات شرکت به صورت دایره ای  -->
         <div class="w-full bg-secondary flex flex-wrap tablet:flex-nowrap justify-center py-10 px-10 tablet:px-24">
-            <div class="w-[calc(50%_-_80px)] mb-5 tablet:mb-0 flex flex-col tablet:w-[calc(20%_-_112px)] desktop:w-[calc(20%_-_150px)] tv:w-[calc(18%_-_180px)] tv:mx-40 mx-16">
-                <div class="progress-bar w-full"> 
+            <div
+                class="w-[calc(50%_-_80px)] mb-5 tablet:mb-0 flex flex-col tablet:w-[calc(20%_-_112px)] desktop:w-[calc(20%_-_150px)] tv:w-[calc(18%_-_180px)] tv:mx-40 mx-16">
+                <div class="progress-bar w-full">
                     <img src="./img/ProgressbarSVG/dateProgress.svg" class="h-8 tablet:h-12" alt="">
                 </div>
-                <p class="text-lg text-primary font-bold text-center mt-5">269</p> 
+                <p class="text-lg text-primary font-bold text-center mt-5">269</p>
                 <p class="text-white text-center mt-3">روز از تاسیس</p>
             </div>
-            <div class="w-[calc(50%_-_80px)] mb-5 tablet:mb-0 flex flex-col tablet:w-[calc(20%_-_112px)] desktop:w-[calc(20%_-_150px)] tv:w-[calc(18%_-_180px)] tv:mx-40 mx-16">
+            <div
+                class="w-[calc(50%_-_80px)] mb-5 tablet:mb-0 flex flex-col tablet:w-[calc(20%_-_112px)] desktop:w-[calc(20%_-_150px)] tv:w-[calc(18%_-_180px)] tv:mx-40 mx-16">
                 <div class="progress-bar w-full">
                     <img src="./img/ProgressbarSVG/satisProgress.svg" class="h-8 tablet:h-12" alt="">
                 </div>
                 <p class="text-lg text-primary font-bold text-center mt-5">75%</p>
                 <p class="text-white text-center mt-3">رضایت مشتری</p>
             </div>
-            <div class="w-[calc(50%_-_80px)] mb-5 tablet:mb-0 flex flex-col tablet:w-[calc(20%_-_112px)] desktop:w-[calc(20%_-_150px)] tv:w-[calc(18%_-_180px)] tv:mx-40 mx-16">
+            <div
+                class="w-[calc(50%_-_80px)] mb-5 tablet:mb-0 flex flex-col tablet:w-[calc(20%_-_112px)] desktop:w-[calc(20%_-_150px)] tv:w-[calc(18%_-_180px)] tv:mx-40 mx-16">
                 <div class="progress-bar w-full">
                     <img src="./img/ProgressbarSVG/banersProgress (1).svg" class="h-8 tablet:h-12" alt="">
                 </div>
                 <p class="text-lg text-primary font-bold text-center mt-5">1235</p>
                 <p class="text-white text-center mt-3">پروژه طراحی</p>
             </div>
-            <div class="w-[calc(50%_-_80px)] mb-5 tablet:mb-0 flex flex-col tablet:w-[calc(20%_-_112px)] desktop:w-[calc(20%_-_150px)] tv:w-[calc(18%_-_180px)] tv:mx-40 mx-16">
+            <div
+                class="w-[calc(50%_-_80px)] mb-5 tablet:mb-0 flex flex-col tablet:w-[calc(20%_-_112px)] desktop:w-[calc(20%_-_150px)] tv:w-[calc(18%_-_180px)] tv:mx-40 mx-16">
                 <div class="progress-bar w-full">
                     <img src="./img/ProgressbarSVG/clientProgress (1).svg" class="h-8 tablet:h-12" alt="">
                 </div>
                 <p class="text-lg text-primary font-bold text-center mt-5">850</p>
                 <p class="text-white text-center mt-3">مشتری تاکنون</p>
             </div>
-            <div class="w-[calc(50%_-_80px)] mb-5 tablet:mb-0 flex flex-col tablet:w-[calc(20%_-_112px)] desktop:w-[calc(20%_-_150px)] tv:w-[calc(18%_-_180px)] tv:mx-40 mx-16">
+            <div
+                class="w-[calc(50%_-_80px)] mb-5 tablet:mb-0 flex flex-col tablet:w-[calc(20%_-_112px)] desktop:w-[calc(20%_-_150px)] tv:w-[calc(18%_-_180px)] tv:mx-40 mx-16">
                 <div class="progress-bar w-full">
                     <img src="./img/ProgressbarSVG/designersProgress.svg" class="h-8 tablet:h-12" alt="">
                 </div>
@@ -545,7 +559,7 @@
                 <img src="./img/OurClientsSVG/Layer 21.svg"
                     class="w-[calc(33.3333%-20px)] tablet:w-[calc(15%-20px)] laptop:w-[calc(4%-4px)] mx-5 mb-3 laptop:mx-1"
                     alt="">
-                
+
                 <img src="./img/OurClientsSVG/Layer 13.svg"
                     class="w-[calc(33.3333%-20px)] tablet:w-[calc(15%-20px)] laptop:w-[calc(4%-4px)] mx-5 mb-3 laptop:mx-1"
                     alt="">
@@ -576,11 +590,11 @@
                 <img src="./img/OurClientsSVG/Layer 21.svg"
                     class="w-[calc(33.3333%-20px)] tablet:w-[calc(15%-20px)] laptop:w-[calc(4%-4px)] mx-5 mb-3 laptop:mx-1"
                     alt="">
-                
-                
+
+
             </div>
         </div>
-    </main>                             
+    </main>
     <footer
         class="pt-10 pb-5 px-10 bg-[#f0f0f0] border-t border-textLight/40 flex justify-between flex-wrap tablet:flex-nowrap">
         <div class="w-full mb-8 tablet:mb-2 tablet:w-1/5">
@@ -589,7 +603,8 @@
                 <p class="text-textLight mb-3">09128737992</p>
                 <p class="text-textLight mb-3">02144966135</p>
                 <p class="text-textLight mb-3">info@mrtarahi.com</p>
-                <p class="text-textLight mb-3 break-words w-48">تهران ، فلکه دوم صادقیه ، ابتدای کاشانی ، برج طلا ، طبقه ششم
+                <p class="text-textLight mb-3 break-words w-48">تهران ، فلکه دوم صادقیه ، ابتدای کاشانی ، برج طلا ، طبقه
+                    ششم
                 </p>
             </div>
         </div>
@@ -645,12 +660,13 @@
                 <img src="./img/Samandehi.jpg" class="w-16" alt="">
             </div>
         </div>
-        
+
     </footer>
     <div class="w-full flex justify-center bg-[#f0f0f0] px-10">
         <div class="w-full mt-5 py-4 border-t border-t-textDark flex justify-center">
             <p class="flex items-center">
-                © کلیه حقوق مادی و معنوی این وب‌سایت برای <a href="https://mrtarahi.com" class="font-bold mx-2">مستر طراحی</a> محفوظ است.</p>
+                © کلیه حقوق مادی و معنوی این وب‌سایت برای <a href="https://mrtarahi.com" class="font-bold mx-2">مستر
+                    طراحی</a> محفوظ است.</p>
         </div>
     </div>
 </body>
